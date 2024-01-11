@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="CoffeeShopUI.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:CoffeeShopUI"
+    Shell.FlyoutBehavior="Flyout">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+        <ShellContent
+        Title="ÇALIŞANLAR"
+        ContentTemplate="{DataTemplate local:CalisanPage}"
+        Route="CalisanPage" />
+
+          <ShellContent
+        Title="MÜŞTERİLER"
+        ContentTemplate="{DataTemplate local:MusteriPage}"
+        Route="MusteriPage" />
+
+
+          <ShellContent
+        Title="AYARLAR"
+        ContentTemplate="{DataTemplate local:Ayarlar}"
+        Route="Ayarlar" />
+
+</Shell>
+

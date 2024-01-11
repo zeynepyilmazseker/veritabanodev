@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoffeeShopUI.Ayarlar"
+             Title="Ayarlar">
+
+        <ContentPage.Resources>
+
+        <Color x:Key="DarkLabelBackColor">Black</Color>
+        <Color x:Key="LightLabelBackColor">White</Color>
+
+        <Color x:Key="DarkLabelTextColor">blue</Color>
+        <Color x:Key="LightLabelTextColor">red</Color>
+
+        <Style TargetType="Label">
+            <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource LightLabelBackColor} ,Dark ={StaticResource DarkLabelBackColor}}"/>
+            <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightLabelTextColor},Dark={StaticResource DarkLabelTextColor}}"/>
+
+        </Style>
+
+    </ContentPage.Resources>
+
+    <Grid ColumnDefinitions="auto,auto" RowDefinitions="auto">
+      <HorizontalStackLayout >
+
+    <Label Text="KOYU TEMA" FontSize="Large" FontAttributes="Bold"  Grid.Column="0" VerticalOptions="Center"/>
+    <Switch Toggled="Switch_Toggled" Grid.Column="1" HorizontalOptions="End" VerticalOptions="Start"></Switch>
+
+    </HorizontalStackLayout>
+
+    </Grid>
+</ContentPage>
